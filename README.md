@@ -9,9 +9,7 @@ SocketIO -> Connect client and server in real time
 # Structure
 
 Server: Server is the server instance that will be responsible for creating, hosting, and managing games.
-
 Client: Is the web interface that will allow the players to play the game.
-
 
 # Error
 we try to change the id generator after a certain amount of heartbeats. It goes undefined and errors the server.
@@ -33,7 +31,9 @@ Then run
         
         
 Should serve it up on port 8080
-
 Should fail after about 8 seconds.
 
-You can see it in the status is connected.
+
+# Website
+Check out the client at localhost:8080.
+You can watch the connection status go from true to false.

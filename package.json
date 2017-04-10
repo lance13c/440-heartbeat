@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./dist/server_fallback/serverWatcher.js",
+    "start-both": "npm start & node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "socket.io": "^1.7.3"
   },
   "dependencies": {
+    "express": "^4.15.2",
     "socket.io-client": "^1.7.3",
     "vue": "^2.2.6"
   }

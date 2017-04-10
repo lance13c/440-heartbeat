@@ -1,6 +1,7 @@
 /**
  * Created by Lance on 4/9/2017.
  */
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -18,8 +19,9 @@ app.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-io.on('connection', function(iosocket){
+io.on('connection', function(iosocket) {
 	console.log ('Server Running');
+	//console.log('socket', iosocket);
 	sockets.push(iosocket);
 });
 
