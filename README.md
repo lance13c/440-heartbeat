@@ -17,7 +17,9 @@ Client: Is the web interface that will allow the players to play the game.
 we try to change the id generator after a certain amount of heartbeats. It goes undefined and errors the server.
 Server crashes.
 
-
+# Failure Recovery
+We can't seem to find the cause to this error. So instead we put in fault detection.
+We catch the error and shutdown the server.
 
 #Run
 You will need nodeJS
