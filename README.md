@@ -18,8 +18,9 @@ we try to change the id generator after a certain amount of heartbeats. It goes 
 Server crashes.
 
 # Failure Recovery
-We can't seem to find the cause to this error. So instead we put in fault detection.
-We catch the error and shutdown the server.
+We created a serverWatcher which watches the servers. If a server goes down it will
+reboot the server. All data on the server is saves and clients will be updated in real time.
+
 
 #Run
 You will need nodeJS
@@ -28,7 +29,7 @@ Then run
 
         run npm install
         gulp
-        node dist\index.js
+        npm start
         
         
 Should serve it up on port 8080
